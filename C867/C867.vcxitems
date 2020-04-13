@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{9895af50-52c8-4d83-a74a-0773c0683ffe}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)degree.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)networkStudent.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)roster.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)securityStudent.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)softwareStudent.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)networkStudent.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)roster.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)securityStudent.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)softwareStudent.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)student.cpp" />
+  </ItemGroup>
+</Project>
